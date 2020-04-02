@@ -21,7 +21,7 @@ class MemoryEditor {
         this.pObject = await memoryjs.openProcess("GeometryDash.exe")
         this.toggle()
     }
-    async toggle(){
+    toggle(){
         reader.question(`Current State [${this.state}] | Toogle Copy Hack (Press Enter) : `,function(answer){
             if(this.state == "OFF"){
                 this.state = "ON"
